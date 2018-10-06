@@ -1,0 +1,28 @@
+html,
+body {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    background: #ccc;
+    overflow: hidden;
+}
+
+body .nav-bar {
+    height: 100px;
+    background: #FF9900;
+}
+
+body .render-item {
+    background: #000;
+    flex: 1;
+}
