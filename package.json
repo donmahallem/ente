@@ -46,7 +46,7 @@
         "style-loader": "^0.23.1",
         "supertest": "^4.0.2",
         "ts-loader": "^6.0.2",
-        "ts-node": "^8.2.0",
+        "ts-node": "^8.3.0",
         "typedoc": "^0.14.2",
         "typescript": "^3.5.2",
         "webpack": "^4.34.0",
