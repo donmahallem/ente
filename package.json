@@ -21,7 +21,7 @@
         "three": "^0.109.0"
     },
     "devDependencies": {
-        "@types/chai": "^4.2.4",
+        "@types/chai": "^4.2.5",
         "@types/chai-http": "^4.2.0",
         "@types/mocha": "^5.2.7",
         "@types/sinon": "^7.5.0",
