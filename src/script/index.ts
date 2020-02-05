@@ -1,9 +1,13 @@
+/*!
+ * Source https://github.com/donmahallem/TrapezeApiTypes
+ */
+
 import * as THREE from 'three';
 
-var scene = new THREE.Scene();
-var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-var renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -11,9 +15,9 @@ renderer.shadowMapEnabled = true;
 renderer.shadowMap.autoUpdate = true;
 const domEl: HTMLCanvasElement = document.body.appendChild(renderer.domElement);
 domEl.className = "renderItem";
-var geometry = new THREE.BoxGeometry(1, 1, 1);
-var material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
-var cube = new THREE.Mesh(geometry, material);
+const geometry = new THREE.BoxGeometry(1, 1, 1);
+const material = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
+const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 ///
 const ballGeometry = new THREE.SphereGeometry(1, 16, 12);
@@ -28,19 +32,19 @@ ball.position.set(3, 1, 3);
 ball.castShadow = true;
 ball.receiveShadow = true;
 ////
-var texture = new THREE.TextureLoader().load("https://i.imgur.com/GBDT1aX.jpg");
+const texture = new THREE.TextureLoader().load("https://i.imgur.com/GBDT1aX.jpg");
 texture.wrapS = THREE.RepeatWrapping;
 texture.wrapT = THREE.RepeatWrapping;
 texture.repeat.set(4, 4);
 const tileMulti: number = 4;
 const floorGeometry: THREE.Geometry = new THREE.PlaneGeometry(30, 30, 100 * tileMulti, 100 * tileMulti);
 const floorMaterial: THREE.MeshPhongMaterial = new THREE.MeshPhongMaterial({
+    blending: THREE.AdditiveBlending,
     color: 0xFFFFFF,
-    //map: texture,
-    blending: THREE.AdditiveBlending
+    // map: texture,
 });
 const floor = new THREE.Mesh(floorGeometry, floorMaterial);
-//floor.castShadow = true;
+// floor.castShadow = true;
 floor.receiveShadow = true;
 
 cube.castShadow = true;
@@ -51,7 +55,6 @@ floor.rotateX(Math.PI / -2.0);
 camera.position.z = 50;
 camera.position.y = 50;
 camera.lookAt(0, 0, 0);
-
 
 const createSpotlight = (x, y, z, color: any = 0xFFFFFF) => {
 
@@ -114,7 +117,6 @@ const dat = (el: HTMLCanvasElement) => {
         camera.lookAt(0, 0, 0);
     };
     el.onwheel = (event: MouseWheelEvent) => {
-        console.log("scroll", event);
         radius = Math.min(200, Math.max(1, radius + (event.deltaY / 50)));
 
         camera.position.x = radius * Math.sin(theta * Math.PI / 360)
@@ -130,7 +132,7 @@ const dat = (el: HTMLCanvasElement) => {
 
 dat(domEl);
 
-function animate() {
+const animate: () => void = (): void => {
     requestAnimationFrame(animate);
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.01;
