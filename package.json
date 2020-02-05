@@ -11,7 +11,9 @@
         "build:doc": "node ./node_modules/typedoc/bin/typedoc --out ./tt2/ --mode modules --exclude /**/index ./src/",
         "test-ci": "nyc mocha --opts mocha.opts",
         "build2": "webpack --config ./config/index.config.js",
-        "start:dev": "webpack-dev-server --config ./config/index.config.js"
+        "start:dev": "webpack-dev-server --config ./config/index.config.js",
+        "lint": "tslint -c tslint.json -p tsconfig-lint.json src/**/*.ts",
+        "lint:fix": "tslint --fix -c tslint.json -p tsconfig-lint.json src/**/*.ts"
     },
     "author": "",
     "license": "MIT",
@@ -24,6 +26,7 @@
         "@types/chai": "^4.2.7",
         "@types/chai-http": "^4.2.0",
         "@types/mocha": "^5.2.7",
+        "@types/node": "^13.7.0",
         "@types/sinon": "^7.5.1",
         "@types/supertest": "^2.0.8",
         "@types/three": "^0.103.2",
