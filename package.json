@@ -23,7 +23,7 @@
         "three": "~0.113.2"
     },
     "devDependencies": {
-        "@types/chai": "~4.2.7",
+        "@types/chai": "~4.2.9",
         "@types/chai-http": "~4.2.0",
         "@types/mocha": "~7.0.1",
         "@types/node": "~13.7.0",
