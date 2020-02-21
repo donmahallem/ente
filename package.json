@@ -43,7 +43,7 @@
         "pug": "~2.0.4",
         "pug-loader": "~2.4.0",
         "sass-loader": "~8.0.2",
-        "sinon": "~8.1.1",
+        "sinon": "~9.0.0",
         "sinon-chai": "~3.5.0",
         "source-map-support": "~0.5.16",
         "style-loader": "~1.1.3",
