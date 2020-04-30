@@ -20,7 +20,7 @@
     "dependencies": {
         "moment": "~2.24.0",
         "rxjs": "~6.5.5",
-        "three": "~0.115.0"
+        "three": "~0.116.0"
     },
     "devDependencies": {
         "@types/chai": "~4.2.11",
