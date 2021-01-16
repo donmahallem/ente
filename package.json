@@ -37,7 +37,7 @@
         "html-webpack-plugin": "~4.5.1",
         "istanbul": "~0.4.5",
         "mocha": "~8.2.1",
-        "node-sass": "~4.14.1",
+        "node-sass": "~5.0.0",
         "nodemon": "~2.0.6",
         "nyc": "~15.1.0",
         "pug": "~2.0.4",
