@@ -19,7 +19,7 @@
     "license": "MIT",
     "dependencies": {
         "moment": "~2.29.1",
-        "rxjs": "~7.0.0",
+        "rxjs": "~7.0.1",
         "three": "~0.128.0"
     },
     "devDependencies": {
