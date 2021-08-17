@@ -47,7 +47,7 @@
         "sinon-chai": "3.7.0",
         "source-map-support": "0.5.19",
         "style-loader": "3.2.1",
-        "supertest": "6.1.5",
+        "supertest": "6.1.6",
         "ts-loader": "9.2.5",
         "ts-node": "10.2.0",
         "tslint": "6.1.3",
