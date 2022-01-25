@@ -30,7 +30,7 @@
         "@types/sinon": "10.0.8",
         "@types/supertest": "2.0.11",
         "@types/three": "0.136.1",
-        "chai": "4.3.4",
+        "chai": "4.3.5",
         "chai-http": "4.3.0",
         "clean-webpack-plugin": "4.0.0",
         "css-loader": "6.5.1",
