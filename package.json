@@ -26,7 +26,7 @@
         "@types/chai": "4.3.3",
         "@types/chai-http": "4.2.0",
         "@types/mocha": "10.0.0",
-        "@types/node": "16.11.64",
+        "@types/node": "16.11.65",
         "@types/sinon": "10.0.13",
         "@types/supertest": "2.0.12",
         "@types/three": "0.144.0",
