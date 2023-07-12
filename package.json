@@ -29,7 +29,7 @@
         "@types/node": "18.16.19",
         "@types/sinon": "10.0.15",
         "@types/supertest": "2.0.12",
-        "@types/three": "0.153.0",
+        "@types/three": "0.154.0",
         "chai": "4.3.7",
         "chai-http": "4.4.0",
         "clean-webpack-plugin": "4.0.0",
