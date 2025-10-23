@@ -42,7 +42,7 @@
         "nyc": "17.1.0",
         "pug": "3.0.3",
         "pug-loader": "2.4.0",
-        "sass-loader": "16.0.5",
+        "sass-loader": "16.0.6",
         "sinon": "21.0.0",
         "sinon-chai": "4.0.1",
         "source-map-support": "0.5.21",
