@@ -36,7 +36,7 @@
         "css-loader": "7.1.4",
         "html-webpack-plugin": "5.6.8",
         "istanbul": "0.4.5",
-        "mocha": "11.7.6",
+        "mocha": "11.8.0",
         "node-sass": "7.0.3",
         "nodemon": "3.1.14",
         "nyc": "18.0.0",
