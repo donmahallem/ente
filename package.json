@@ -33,7 +33,7 @@
         "chai": "6.2.2",
         "chai-http": "5.1.2",
         "clean-webpack-plugin": "4.0.0",
-        "css-loader": "7.1.4",
+        "css-loader": "7.1.5",
         "html-webpack-plugin": "5.6.8",
         "istanbul": "0.4.5",
         "mocha": "11.8.0",
